@@ -1,82 +1,43 @@
 # 💻 pro2-fib · Programació 2 (C++)
 
-> **Pràctiques, disseny modular orientat a objectes, tipus abstractes de dades (TADs) i estructures de dades en C++ de l'assignatura Programació 2 (PRO2) del Grau en Enginyeria Informàtica a la Facultat d'Informàtica de Barcelona (UPC · FIB).**
+> **Estructures de dades, programació orientada a objectes i disseny modular en C++ de l'assignatura Programació 2 (PRO2) · Grau en Enginyeria Informàtica (UPC · FIB).**
 
 [![Language](https://img.shields.io/badge/Language-C%2B%2B17-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://isocpp.org)
 [![University](https://img.shields.io/badge/UPC-FIB-0070BA?style=for-the-badge)](https://www.fib.upc.edu)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 
 ---
 
-## 📌 Presentació i Objectius
+## 📌 Descripció
 
-Aquest repositori recull exhaustivament el temari, les sessions pràctiques de laboratori, la resolució de problemes algorísmics del Jutge.org i els projectes de programació desenvolupats a l'assignatura **Programació 2 (PRO2)** a la Facultat d'Informàtica de Barcelona (UPC · FIB).
+Aquest repositori recull les implementacions i treballs pràctics desenvolupats durant el curs de **Programació 2 (PRO2)** a la Facultat d'Informàtica de Barcelona (FIB · UPC).
 
-L'objectiu d'aquest espai és consolidar i documentar el meu coneixement base en:
-1. **Programació Orientada a Objectes (POO)** en C++: encapsulació, modularitat, mètodes constants, especificació formal d'interfícies (`.hh`) i implementacions robustes (`.cc`).
-2. **Gestió Manual de Memòria Dinàmica**: punters (`*`), referències (`&`), constructors de còpia, destructors recursius i sobrecàrrega d'operadors.
-3. **Tipus Abstractes de Dades (TADs)**: anàlisi asimptòtica de costos temporal i espacial sobre estructures seqüencials (piles, cues, llistes) i no lineals (arbres binaris, arbres generals i diccionaris associatius).
-
----
-
-## 🚴 Projectes Principals de Programació
-
-### 1. [PRÀCTICA 1: Simulació del Sistema Bicing](./PRÀCTICA)
-Simulació completa d'una xarxa de transport i préstec de bicicletes públiques mitjançant una arquitectura modular neta i altament eficient:
-- `Bici`: Representació de la bicicleta individual, estat de viatge i temps d'ús.
-- `Estacio`: Gestió d'estacions amb capacitat finita, bicicletes aparcades i cues de demanda.
-- `Conj_bicis`: Col·lecció global indexada de bicicletes en circulació i emmagatzemades.
-- `Conj_estacions`: Xarxa d'estacions amb redistribució dinàmica de bicicletes i cerca de camins òptims.
-- `BinTree`: Modelat de la jerarquia d'estacions mitjançant estructures en arbre binari.
-
-### 2. [PRÀCTICA 2: Comerç Fluvial & Rutes de Vaixells](./PRÀCTICA%202%20-%20Comerç%20Fluvial)
-Simulació d'un sistema de comerç fluvial i viatges comercials de vaixells mercants entre ciutats interconnectades en una conca hidrogràfica modelada com a arbre binari:
-- `Ciutat`: Inventari de productes amb estoc disponible, quantitats desitjades i demanda requerida.
-- `Conj_ciutats`: Xarxa fluvial de ciutats i càlcul de viatges comercials de màxim benefici.
-- `Conj_productes`: Catàleg global de productes amb pesos, volums i preus unitaris.
-- `Vaixell`: Rutes de navegació, càrrega/descàrrega de mercaderies i optimització de viatges en profunditat.
+El focus principal del repositori se centra en:
+- **Programació Orientada a Objectes:** Disseny modular, encapsulació, interfícies (`.hh`) i implementacions (`.cc`).
+- **Gestió de Memòria:** Punteros, memòria dinàmica, constructors de còpia i destructors recursius.
+- **Tipus Abstractes de Dades (TADs):** Implementació i ús d'estructures de dades lineals (piles, cues, llistes) i arborescents (arbres binaris, arbres de cerca i arbres generals).
 
 ---
 
-## 📚 Índex de Blocs i Continguts
+## 📂 Organització del Repositori
 
-| Directori | Temàtica i Conceptes Clau |
-| :--- | :--- |
-| **[0- Repàs](./0-%20Repàs)** | Fonaments de C++, estructures bàsiques, vectors i pas per referència. |
-| **[00-Repàs FINAL](./00-Repàs%20FINAL)** | Problemes integradors de final de curs i preparació per a la prova final. |
-| **[1-Stack & Queue](./1-Stack%20&%20Queue)** | Ús i aplicació de piles (`std::stack`) i cues (`std::queue`) en problemes LIFO/FIFO. |
-| **[2-List & Map](./2-List%20&%20Map)** | Llistes doblement encadenades (`std::list`) i taules associatives (`std::map`, `std::set`). |
-| **[3- Bintrees 1](./3-%20Bintrees%201)** | Fonaments d'arbres binaris (`BinTree`): recorreguts, mida, alçada, fulles i cerques. |
-| **[4- Bintrees 2](./4-%20Bintrees%202)** | Recorreguts en preordre, inordre, postordre i per nivells; construcció d'arbres. |
-| **[5- Bintrees 3](./5-%20Bintrees%203)** | Arbres Binaris de Cerca (BST), immersió recursiva i transformacions estructurals. |
-| **[6- Modularitat 1](./6-%20Modularitat%201)** | Disseny de classes C++, especificació d'interfícies (`.hh`), encapsulament i mètodes privats. |
-| **[7- Modularitat 2](./7-%20Modularitat%202)** | Relacions de composició, gestió de còpies profundes i sobrecàrrega d'operadors. |
-| **[8- Class Stack](./8-%20Class%20Stack)** | Implementació interna de la classe `Stack` mitjançant nodes enllaçats en memòria dinàmica. |
-| **[9- Class Queue](./9-%20Class%20Queue)** | Implementació interna de la classe `Queue` amb gestió de punters a primer i últim node. |
-| **[10- Class List](./10-%20Class%20List)** | Implementació interna d'una llista genèrica doblement enllaçada amb iteradors. |
-| **[11- Classes Arbre](./11-%20Classes%20Arbre%20(Binari,%20N-ari%20i%20General))** | Arbres binaris, arbres n-aris i arbres generals amb destrucció recursiva de memòria. |
-| **[SESSIONS](./SESSIONS)** | Sessions pràctiques de laboratori per consolidar conceptes d'implementació. |
-| **[evaluate](./evaluate)** | Eines d'avaluació d'arbres d'expressions aritmètiques. |
-| **[PARCIAL & Exàmens](./Exàmens)** | Resolució d'exàmens parcials i finals d'anys anteriors. |
+- **Pràctiques:** Projectes modulars desenvolupats en C++ estructurats en múltiples classes amb gestió de col·leccions i arbres.
+- **Estructures Lineals:** Implementació i aplicació de piles (`Stack`), cues (`Queue`) i llistes doblement encadenades (`List`).
+- **Estructures Arborescents:** Arbres binaris (`BinTree`), recorreguts (preordre, inordre, postordre, nivells) i arbres de cerca.
+- **Laboratoris i Sessions:** Exercicis d'aplicació pràctica i resolució de problemes algorísmics.
 
 ---
 
-## 🛠️ Compilació i Execució
+## 🛠️ Compilació
+
+Els programes i mòduls estan dissenyats per ser compilats amb l'estàndard **C++17**:
 
 ```bash
-# Compilació de la Pràctica 1 (Bicing)
-cd PRÀCTICA
-make
-./program < jp_public.in > meures.out
-
-# Compilació de la Pràctica 2 (Comerç Fluvial)
-cd "PRÀCTICA 2 - Comerç Fluvial"
-make
-./program < sampleinp.txt > meures.out
+g++ -O2 -std=c++17 -Wall program.cc -o program
+./program < input.txt
 ```
 
 ---
 
 ## 📄 Llicència
 
-Aquest material acadèmic es distribueix sota la llicència MIT per a finalitats d'estudi, consulta i referència formativa.
+Aquest repositori té una finalitat estrictament acadèmica i formativa.
