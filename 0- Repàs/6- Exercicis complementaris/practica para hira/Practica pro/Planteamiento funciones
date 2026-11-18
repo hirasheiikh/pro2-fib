@@ -1,0 +1,75 @@
+1. leer_rio o lr:
+//Pre: Arbol binario de ciudades vacio
+//Post: Arbol binario con ciudades completas (con identificador pero con el mapa vacio y cantidad de elementos tambien)
+//Entraran por el canal de entrada los identificadores de las ciudades
+
+2. leer_inventario o li.
+//Pre: Entra el identificador de la ciudad.
+// Se hará una busqueda en el arbol de la ciudad. (renta mas tener un set de ciudades a parte para ver si existe o no?)
+//Post: Si la ciudad no existe saldrá un mensaje de error. 
+//Post: Si existe se escribirá en la ciudad: mapa (identificador del producto--> cuantas tiene y cuantas necesita) 
+
+3. leer_inventarios o ls. 
+
+//Pre: no entra nada
+// Post. Se escribe los inventrios de todas las ciudades del rio. No todas tienen inventario?
+
+4. modificar_barco o mb.
+
+// Pre: Se lee el id del producto a comprar, cant a comprar y lo mismo con el que vender. (cant positivas y 1 almenos mayor que 0)
+// Post: Si el producto no existe o los dos son iguales se cara mensaje de error
+
+5. escribir_barco o eb.
+// Pre:  
+// También se escriben los viajes realizados (ultima ciudad visitada) (para que lo queremos?)
+
+6. consultar_num o cn. Escribe cuantos productos diferentes hay.
+//Post: Escribe la cantidad de productos diferentes 
+7. agregar_productos o ap. 
+// Entra num de productos nuevos. Van entrando volumen y peso. Identificador és el siguiente del ultimo.
+
+  
+8. escribir_producto o ep. 
+// Pre: Lee id producto
+// Post: Si no existe sale mensaje error
+//       Si existe sale peso y volumen.
+9. escribir_ciudad o ec. 
+// Pre: Lee id ciudad     
+// Post: Si no existe sale mensaje error
+//       Si existe sale inventario, peso y volumen total
+
+10. poner_prod o pp.
+//Pre: Lee id de la ciudad i prod, unidades q tiene y quiere
+//Post: Si no existe el prod o ya esta en el inventario o no existe la ciudad mensaje de error
+//       Sino se añade en el inventario modificando peso y volumen (se escriben luego)
+11. modificar_prod o mp.
+//Pre: Lee id de la ciudad i prod, unidades q tiene y quiere
+//Post: Si no existe, no esta en el inventario o no existe la ciudad mensaje de error
+//       Sino se modifica las cantidades (las necesitadas tienen que ser mayor de cero) se modifica el peso y volumen (se escriben luego)
+
+
+12. quitar_prod o qp. 
+//Pre: Lee id de la ciudad i prod
+//Post: Si no existe el prod o no esta en el inventario o no existe la ciudad mensaje de error
+//      Se quitan los datos de este producto en la ciudad, se modifica el peso y volumen (se escriben luego)
+13. consultar_prod o cp.
+//Pre: Lee id de la ciudad i prod
+//Post: Si no existe el prod o no esta en el inventario o no existe la ciudad mensaje de error
+//      Se escribe cuantas unidades de ese producto tiene y quiere la ciudad.
+14. comerciar o co. 
+//Pre: Se leen los identificadores de las dos ciudades
+//Post: Si no existen mensaje de error
+//      Se intercambian productos entre ellas (falta o no)
+
+15. redistribuir o re.
+//Pre:
+//Post: Ciudad desembocadura negocia comercia con la de arriba a la derecha y luego con la ciudad izquierda y asi succesivamente (???)
+16. hacer_viaje o hv. 
+/*El barco busca la ruta a partir de la desembocadura que le permita comprar y vender el mayor número posible de productos. En caso que haya
+más de una ruta que lo cumpla, se queda con la más corta, y en caso de que tengan la misma longitud, se queda con la que viene río arriba a mano derecha. Una
+vez encontrada la ruta, se hace el viaje y se compran y venden los productos a lo
+largo de la ruta, modificándose los inventarios de las ciudades. Se escribe el total
+de unidades de productos compradas y vendidas por el barco. (????)
+*/
+17. fin
+// Acaba la ejecución
