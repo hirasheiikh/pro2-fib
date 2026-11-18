@@ -1,26 +1,33 @@
 # 🧩 pro2-fib · Programació 2 (C++ Orientat a Objectes)
 
-> **Estructures de dades lineals i arborescents, disseny modular, gestió de memòria i programació orientada a objectes de l'assignatura Programació 2 (PRO2) del Grau en Enginyeria Informàtica a la Facultat d'Informàtica de Barcelona (UPC · FIB).**
+> **Estructures de dades clàssiques, disseny modular, gestió de memòria dinàmica i pràctica de simulació en C++ de l'assignatura Programació 2 (PRO2) del Grau en Enginyeria Informàtica a la Facultat d'Informàtica de Barcelona (UPC · FIB).**
 
 [![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://isocpp.org)
 [![University](https://img.shields.io/badge/UPC-FIB-0070BA?style=for-the-badge)](https://www.fib.upc.edu)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 
 ---
 
-## 📚 Temari i Disseny del Programari
-
-- **Disseny Orientat a Objectes:** Classes, encapsulament, mètodes modificadors/consultors, constructors i destructors.
-- **Tipus Abstractes de Dades (TAD):**
-  - Estructures lineals: Llistes, Piles (`Stack`), Cues (`Queue`).
-  - Estructures arborescents: Arbres binaris (`BinTree`), arbres generals (N-aris).
-- **Gestió de Memòria Dinàmica:** Ús de punters, assignació dinàmica, alliberament de memòria i prevenció de fuites de memòria (*memory leaks*).
-- **Pràctica de C++:** Desenvolupament complet d'un sistema modular estructurat en múltiples classes amb documentació Doxygen.
+## 🚲 Pràctica Principal: Simulador Bicing en C++
+Implementació completa d'un sistema modular de gestió i distribució de bicicletes i estacions en xarxa:
+- **Arquitectura de Classes:** `Bici`, `Estacio`, `Conj_bicis`, `Conj_estacions`, `BinTree`.
+- **Estructures d'Arbre Binari (`BinTree`):** Distribució i redistribució òptima de recursos per recorreguts en arbre.
+- **Modularitat:** Separació estricta entre especificació (`.hh`), implementació (`.cc`) i programa principal (`program.cc`).
+- **Eficiència:** Gestió de memòria dinàmica amb complexitats temporals optimitzades.
 
 ---
 
-## 🛠️ Compilació
+## 📚 Tipus Abstractes de Dades (TAD)
+- **Estructures Lineals:** Implementació de llistes enllaçades (`List`), piles (`Stack`) i cues (`Queue`).
+- **Diccionaris i Mapatges:** Ús i disseny d'associacions clau-valor (`Map`).
+- **Estructures Arborescents:** Arbres binaris, arbres generals (N-aris) i recorreguts (preordre, inordre, postordre).
+
+---
+
+## 🛠️ Compilació amb Makefile
 
 ```bash
-g++ -c -Wall -Wextra -std=c++11 nom_classe.cc
-g++ -o programa main.o nom_classe.o
+cd PRÀCTICA
+make
+./program.exe < jp_public.in > out.txt
 ```
