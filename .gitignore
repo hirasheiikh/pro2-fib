@@ -1,12 +1,17 @@
-# Binaries & Compiled
+# Binaries and executables
 *.exe
 *.o
 *.out
 *.app
 *.tar
 *.zip
+*.tgz
 
-# IDE & OS
+# OS and IDE files
 .vscode/
+.idea/
+*.workspace
+*.PRO2
+*:Zone.Identifier*
 .DS_Store
 Thumbs.db
